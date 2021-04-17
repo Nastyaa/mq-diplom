@@ -702,7 +702,7 @@ body {
 	background-color: #000;
   opacity: 0.6;
 
-  max-width: 360px;
+  width: 100%;
 	height: 100%;
 
 	padding-top: 24px;
@@ -718,8 +718,10 @@ body {
 
 .popup-content {
   position: relative;
-	width: 100%;
+	width: 330px;
 	height: 100%;
+
+  margin: 0 auto;
 
 	display: flex;
 	flex-direction: column;
@@ -757,7 +759,6 @@ body {
 	margin-bottom: 30px;
 }
 
-
 .visit-list {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -768,6 +769,11 @@ body {
 	background-size: 10px;
 
 	cursor: pointer;
+}
+
+.subscribtion-options{
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .radio-option {
@@ -798,6 +804,12 @@ body {
   background-image: url(..svg/form-circle.svg);
 }
 
+.comments-field {
+  margin-top: 10px;
+  padding: 20px;
+  height: 130px;
+}
+
 .send-button {
   height: 50px;
   width: 100%;
@@ -811,6 +823,31 @@ body {
 }
 
 @media(max-width: 640px) and (orientation: landscape), (min-width: 641px) and (max-width: 1200px) {
+
+  .header {
+    padding: 50px 35px 125px;
+  }
+
+  .main-title{
+    font-size: 4rem;
+    margin-top: 100px;
+
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+
+  .nav-box {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .logo-img {
+    width: 158px;
+  }
 
   .block-title {
     font-size: 1.78rem;
@@ -887,9 +924,22 @@ body {
     max-width: 100%;
   }
 }
+
+.popup {
+  padding-top: 195px;
+}
   
 
 @media (min-width: 1201px) {
+
+  .header {
+    padding: 25px 230px 150px;
+  }
+
+  .header-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   .menu-button {
     display: none;
@@ -898,13 +948,8 @@ body {
   .nav-box {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     
-    margin-right: 230px;
-    margin-left: 230px;
-    
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .logo {
@@ -940,17 +985,11 @@ body {
 
   .main-title {
     width: 700px;
-    text-align: center;
-    
-    font: 45px Open Sans, sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    line-height: 1.7;
-    
+    text-align: center; 
+    font-size: 4.5rem; 
+
     margin: auto;
-    margin-top: 149px;
+    margin-top: 127px;
   }
 
   .block-title {
@@ -1034,6 +1073,9 @@ body {
   .shop-item:nth-child(n+2) {
     margin-top: 0;
     margin-left: 100px;
+  }
 
+  .popup {
+    padding-top: 215px;
   }
 }
