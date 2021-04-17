@@ -771,37 +771,41 @@ body {
 	cursor: pointer;
 }
 
-.subscribtion-options{
+.subscribtion-radio {
   margin-top: 35px;
   margin-bottom: 35px;
 }
 
-.radio-option {
-	display: inline-block;
+.subscribtion-options {
+  margin-top: 10px;
 }
 
-.radio-button:nth-of-type(n+2) {
+.radio-option:nth-of-type(n+2) {
 	margin-left: 34px;
 }
 
-.subscribtion-hint::before {
-	content: "";
+.radio-option {
+  cursor: pointer;
+}
+
+.radio-option::before {
+	content: " ";
 	display: inline-block;
 
 	width: 25px;
 	height: 25px;
 
-	background-image: url(..svg/form-empty-circle.svg);
+	background-image: url(../svg/form-empty-circle.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 25px;
 
-	vertical-align: center;
+	vertical-align: middle;
 	margin-right: 6px;
 }
 
-.radio-button:checked ~ .subscribtion-hint::before {
-  background-image: url(..svg/form-circle.svg);
+.radio-button:checked ~ .radio-option::before {
+  background-image: url(../svg/form-circle.svg);
 }
 
 .comments-field {
@@ -923,10 +927,6 @@ body {
   .footer {
     max-width: 100%;
   }
-}
-
-.popup {
-  padding-top: 195px;
 }
   
 
