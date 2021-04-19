@@ -46,24 +46,15 @@ body {
 
 .header {
   position: relative;
-  padding: 30px 15px 220px;
-}
-
-.header-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  display: flex;
-}
-
-.header-background-image {
   width: 100%;
-  object-fit: cover;
-  object-position: center center;
+  
+  background-color: #7c998c;
+  background-image: url(../images/banner-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
+
 
 .header::after {
   content: "";
@@ -83,6 +74,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+
+  padding: 30px 15px 220px;
 
   z-index: 2;
 }
@@ -149,7 +142,6 @@ body {
 .trends {
   margin-top: 40px;
 }
-
 
 .block-header {
   position: relative;
@@ -455,7 +447,7 @@ body {
   margin-top: 18px;
 
   text-align: center;
-  font: 14px Open Sans, sans-serif;
+  font: 1.4rem Open Sans, sans-serif;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
@@ -699,8 +691,7 @@ body {
 	position: fixed;
 	top: 0;
 
-	background-color: #000;
-  opacity: 0.6;
+	background-color: rgba(0, 0, 0, 0.6);
 
   width: 100%;
 	height: 100%;
@@ -788,7 +779,7 @@ body {
   cursor: pointer;
 }
 
-.radio-option::before {
+.subscribtion-hint::before {
 	content: " ";
 	display: inline-block;
 
@@ -804,7 +795,7 @@ body {
 	margin-right: 6px;
 }
 
-.radio-button:checked ~ .radio-option::before {
+.radio-button:checked ~ .subscribtion-hint::before {
   background-image: url(../svg/form-circle.svg);
 }
 
@@ -829,6 +820,10 @@ body {
 @media(max-width: 640px) and (orientation: landscape), (min-width: 641px) and (max-width: 1200px) {
 
   .header {
+    background-image: url(../images/banner-bg-tablet.jpg);
+  }
+
+  .header-content {
     padding: 50px 35px 125px;
   }
 
@@ -850,11 +845,11 @@ body {
   }
 
   .logo-img {
-    width: 158px;
+    width: 16rem;
   }
 
   .block-title {
-    font-size: 1.78rem;
+    font-size: 1.8rem;
   }
 
   .trends-posts {
@@ -879,6 +874,10 @@ body {
     margin-right: 2px;
   }
 
+  .trends-post-link {
+    font-size: 1.7rem;
+  }
+
   .main {
     display: flex;
     margin-top: 50px;
@@ -890,9 +889,24 @@ body {
     width: 66%;
   }
 
+  .main-article-link {
+    font-size: 1.7rem;
+  }
+
+  .main-article-text {
+    font-size: 1.5rem;
+  }
+
   .aside {
     width: 33%;
     margin-left: 35px;
+  }
+
+  .new-posts-title, 
+  .subscribe-title, 
+  .tags-title, 
+  .categories-title {
+    font-size: 1.4rem;
   }
 
   .shop {
@@ -927,12 +941,20 @@ body {
   .footer {
     max-width: 100%;
   }
+
+  .popup {
+    padding-top: 200px;
+  }
 }
   
 
 @media (min-width: 1201px) {
 
   .header {
+    background-image: url(../images/banner-bg.jpg);
+  }
+
+  .header-content {
     padding: 25px 230px 150px;
   }
 
@@ -948,8 +970,7 @@ body {
   .nav-box {
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-around;  
   }
 
   .logo {
@@ -957,7 +978,7 @@ body {
   }  
 
   .logo-img {
-    width: 180px;
+    width: 18rem;
   }
 
   .nav-menu {
@@ -968,7 +989,7 @@ body {
 
   .nav-menu-item {
     font-family: Open Sans, sans-serif;
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 
   .nav-menu-item:hover {
@@ -993,7 +1014,7 @@ body {
   }
 
   .block-title {
-    font-size: 1.78rem;
+    font-size: 2rem;
   }
 
   .trends {
@@ -1012,6 +1033,10 @@ body {
   .trends-post:nth-child(n+2) {
     margin-top: 0;
     margin-left: 4px;
+  }
+
+  .trends-post-link {
+    font-size: 2rem;
   }
 
   .main {
@@ -1051,8 +1076,23 @@ body {
     margin-bottom: 0;
   }
 
+  .main-article-link {
+    font-size: 2rem;
+  }
+
+  .main-article-text {
+    font-size: 1.5rem;
+  }
+
   .aside {
     width: 33%;
+  }
+
+  .new-posts-title, 
+  .subscribe-title, 
+  .tags-title, 
+  .categories-title {
+    font-size: 1.4rem;
   }
 
   .shop {
@@ -1073,6 +1113,10 @@ body {
   .shop-item:nth-child(n+2) {
     margin-top: 0;
     margin-left: 100px;
+  }
+
+  .shop-item-title {
+    font-size: 2rem;
   }
 
   .popup {
