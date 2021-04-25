@@ -711,7 +711,7 @@ body {
 
   z-index: 3;
 
-  /*display: none;*/
+  display: none;
 }
 
 .popup-content {
