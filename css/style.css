@@ -711,7 +711,7 @@ body {
 
   z-index: 3;
 
-  display: none;
+  /*display: none;*/
 }
 
 .popup-content {
@@ -774,6 +774,7 @@ body {
 }
 
 .popup-hint {
+  display: inline-block;
   margin-bottom: 10px;
 }
 
